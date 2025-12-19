@@ -10,12 +10,12 @@ public class Student {
 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.UUID)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int studentId;
-	private String studentName;
+	private String studentFullName;
 	private String studentEmail;
-	private String studentCollegeName;
-	private int studentage;
+	private String studentCollageName;
+	private int studentAge;
 	private String studentCourse;
 	private String batchNumber;
 	private String batchMode;
@@ -28,11 +28,13 @@ public class Student {
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
-	public String getStudentName() {
-		return studentName;
+	
+	
+	public String getStudentFullName() {
+		return studentFullName;
 	}
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
+	public void setStudentFullName(String studentFullName) {
+		this.studentFullName = studentFullName;
 	}
 	public String getStudentEmail() {
 		return studentEmail;
@@ -40,17 +42,19 @@ public class Student {
 	public void setStudentEmail(String studentEmail) {
 		this.studentEmail = studentEmail;
 	}
-	public String getStudentCollegeName() {
-		return studentCollegeName;
+	
+	
+	public String getStudentCollageName() {
+		return studentCollageName;
 	}
-	public void setStudentCollegeName(String studentCollegeName) {
-		this.studentCollegeName = studentCollegeName;
+	public void setStudentCollageName(String studentCollageName) {
+		this.studentCollageName = studentCollageName;
 	}
-	public int getStudentage() {
-		return studentage;
+	public int getStudentAge() {
+		return studentAge;
 	}
-	public void setStudentage(int studentage) {
-		this.studentage = studentage;
+	public void setStudentAge(int studentAge) {
+		this.studentAge = studentAge;
 	}
 	public String getStudentCourse() {
 		return studentCourse;
